@@ -1,3 +1,7 @@
-.logo{
-    width: 50%;
+body {
+    background-color: rgb(25, 196, 39);
+}
+
+.logoimage {
+    width: 30%;
 }
