@@ -126,7 +126,7 @@ eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../.
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \"body {\\n    background-color: rgb(25, 196, 39);\\n}\\n\\n.logoimage {\\n    width: 30%;\\n}\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/styles/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".logoimage {\\n    width: 1284px;\\n    height: 300px;\\n}\\n\\n.navigation {\\n    display: flex;\\n    justify-content: space-around;\\n    margin: 50px;\\n    font-family: Georgia, 'Times New Roman', Times, serif;\\n    color: green;\\n}\\n\\n.welcome{\\n    text-transform: uppercase;\\n    animation: blink 1s infinite;\\n}\\n\\n@keyframes blink {\\n    from {color: green}\\n    to {color: orangered}\\n};\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/styles/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -188,15 +188,51 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 
 /***/ }),
 
-/***/ "./src/images/logo.jpeg":
+/***/ "./src/footer.js":
+/*!***********************!*\
+  !*** ./src/footer.js ***!
+  \***********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst footer = () => {\n    const copyright = document.createElement('footer');\n    copyright.setAttribute('class', 'm-5 text-center text-secondary');\n    copyright.innerHTML = 'Datagirl &copy; 2020';\n    document.body.appendChild(copyright);\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (footer);\n\n//# sourceURL=webpack:///./src/footer.js?");
+
+/***/ }),
+
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _images_food3_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/food3.jpg */ \"./src/images/food3.jpg\");\n\n\nconst home = () => {\n    const bodyElem = document.createElement('div');\n    bodyElem.setAttribute('class', 'd-flex ml-auto');\n\n    const content = document.createElement('div');\n    content.setAttribute('class', 'jumbotron m-5 col-md-6');\n\n    const bodyText = document.createElement('h3');\n    bodyText.setAttribute('class', 'text-center text-danger')\n    const button = document.createElement('button');\n    button.setAttribute('class', 'btn btn-success m-5');\n    button.innerHTML = 'Explore our Menu';\n    const btncontact = document.createElement('button');\n    btncontact.setAttribute('class', 'btn btn-primary m-5');\n    btncontact.innerHTML = 'Contact Us';\n    \n    bodyText.innerHTML = 'Chez Bibih offers a variety of mouth watering dishes at affordable prices';\n   \n\n    const bodyImage = document.createElement('div');\n    bodyImage.setAttribute('class', 'col-md-4');\n\n    const foodImage = document.createElement('img');\n    // foodImage.classList.add('logoimage');\n    foodImage.src = _images_food3_jpg__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n    foodImage.setAttribute('class', 'col-md-12')\n    \n\n    document.body.appendChild(bodyElem);\n    bodyElem.append(bodyImage, content);\n    content.append(bodyText, button, btncontact);\n    bodyImage.appendChild(foodImage);\n    \n    \n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (home);\n\n\n//# sourceURL=webpack:///./src/home.js?");
+
+/***/ }),
+
+/***/ "./src/images/food1.jpg":
 /*!******************************!*\
-  !*** ./src/images/logo.jpeg ***!
+  !*** ./src/images/food1.jpg ***!
   \******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"0bb986d3dbb06d89167fa495c9918816.jpeg\");\n\n//# sourceURL=webpack:///./src/images/logo.jpeg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"b445d4770040217d4c450961b55c0bf2.jpg\");\n\n//# sourceURL=webpack:///./src/images/food1.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/food3.jpg":
+/*!******************************!*\
+  !*** ./src/images/food3.jpg ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"321d053bc41b2cc5aa27a54ad9e98612.jpg\");\n\n//# sourceURL=webpack:///./src/images/food3.jpg?");
 
 /***/ }),
 
@@ -208,7 +244,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/style.css */ \"./src/styles/style.css\");\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_style_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(bootstrap__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ \"./node_modules/bootstrap/dist/css/bootstrap.min.css\");\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./nav */ \"./src/nav.js\");\n\n\n\n\n \nObject(_nav__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/style.css */ \"./src/styles/style.css\");\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_style_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(bootstrap__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ \"./node_modules/bootstrap/dist/css/bootstrap.min.css\");\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./nav */ \"./src/nav.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n\n\n\n\n\n\n\nObject(_nav__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\nObject(_home__WEBPACK_IMPORTED_MODULE_4__[\"default\"])();\nObject(_footer__WEBPACK_IMPORTED_MODULE_5__[\"default\"])();\n\n\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -220,7 +256,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _images_logo_jpeg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/logo.jpeg */ \"./src/images/logo.jpeg\");\n\n\nconst logo = () => {\n    const nav = document.createElement('nav')\n    const logoImage = document.createElement('img');\n    logoImage.classList.add('logoimage');\n    logoImage.src = _images_logo_jpeg__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n\n    const headName = document.createElement('h1');\n    headName.innerHTML = 'Chez Bibih';\n\n    document.body.appendChild(nav);\n    nav.append(logoImage, headName);\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (logo);\n\n//# sourceURL=webpack:///./src/nav.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _images_food1_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/food1.jpg */ \"./src/images/food1.jpg\");\n//import * as url from './images/logo.jpeg';\n\n\nconst logo = () => {\n    const nav = document.createElement('div');\n    nav.classList.add('navigation');\n    const navBrand = document.createElement('div');\n\n    const logoImage = document.createElement('img');\n    logoImage.classList.add('logoimage');\n    logoImage.src = _images_food1_jpg__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n\n    const headName = document.createElement('h1');\n    headName.classList.add('welcome');\n    headName.innerHTML = 'Welcome to Chez Bibih';\n\n    const home = document.createElement('a');\n    home.innerHTML = 'Home';\n\n    const menu = document.createElement('a');\n    menu.innerHTML = 'Menu';\n\n    const contact = document.createElement('a');\n    contact.innerHTML = 'Contact';\n\n    document.body.append(navBrand, nav);\n    navBrand.appendChild(logoImage);\n    nav.append(headName, home, menu, contact);\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (logo);\n\n//# sourceURL=webpack:///./src/nav.js?");
 
 /***/ }),
 

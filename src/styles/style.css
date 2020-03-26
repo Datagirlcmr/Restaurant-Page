@@ -1,7 +1,22 @@
-body {
-    background-color: rgb(25, 196, 39);
+.logoimage {
+    width: 1284px;
+    height: 300px;
 }
 
-.logoimage {
-    width: 30%;
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: green;
 }
+
+.welcome{
+    text-transform: uppercase;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    from {color: green}
+    to {color: orangered}
+};
