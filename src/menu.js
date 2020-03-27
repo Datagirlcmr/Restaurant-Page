@@ -9,15 +9,18 @@ const menu = () => {
 }
 
 const displayMenu = () => {
-    document.querySelector('.menuimage').style.display ='block';
-    document.querySelector('.mainpage').style.display = 'none';
-    document.querySelector('.contact').style.display = 'none';
+   const showMenu = document.querySelector('.menuimage')
+   const showPage = document.querySelector('.mainpage')
+   showPage.replaceWith(showMenu);
+   showMenu.style.display = 'block';
+   //const showContact =document.querySelector('.contact')
 }
 
 const displayContact = () => {
-    document.querySelector('.menuimage').style.display ='none';
-    document.querySelector('.mainpage').style.display = 'none';
-    document.querySelector('.contact').style.display = 'block';
+   const showContact = document.querySelector('.contact')
+   const showPage = document.querySelector('.mainpage')
+   showPage.replaceWith(showContact);
+   showContact.style.display = 'block';
 }
 
 

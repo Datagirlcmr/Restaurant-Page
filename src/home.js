@@ -2,11 +2,11 @@ import food3 from './images/food3.jpg';
 import {displayMenu, displayContact} from './menu';
 
 const home = () => {
-    const bodyElem = document.querySelector('#content');
-    bodyElem.setAttribute('class', 'd-flex ml-auto mainpage');
+    const bodyElem = document.createElement('div');
+    bodyElem.setAttribute('class', 'd-flex ml-auto');
 
     const content = document.createElement('div');
-    content.setAttribute('class', 'jumbotron m-5 col-md-6');
+    content.setAttribute('class', 'jumbotron m-5 col-md-6 mainpage');
 
     const bodyText = document.createElement('h3');
     bodyText.setAttribute('class', 'text-center text-danger')
