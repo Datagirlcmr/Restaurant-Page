@@ -15,7 +15,7 @@ const logo = () => {
   headName.innerHTML = 'Welcome to Chez Bibih';
 
   const home = document.createElement('a');
-  home.innerHTML = home.innerHTML = 'Home';
+  home.innerHTML = 'Home';
   home.setAttribute('href', '');
 
   const menu = document.createElement('a');

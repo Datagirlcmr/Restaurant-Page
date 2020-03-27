@@ -21,8 +21,7 @@ const home = () => {
   btncontact.innerHTML = 'Contact Us';
   btncontact.addEventListener('click', displayContact);
 
-  bodyText.innerHTML =
-    'Chez Bibih offers a variety of mouth watering dishes at affordable prices';
+  bodyText.innerHTML = 'Chez Bibih offers a variety of mouth watering dishes at affordable prices';
 
   const bodyImage = document.createElement('div');
   bodyImage.setAttribute('class', 'col-md-4');
