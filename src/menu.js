@@ -10,8 +10,16 @@ const menu = () => {
 
 const displayMenu = () => {
     document.querySelector('.menuimage').style.display ='block';
-    document.querySelector('.home').style.display = 'none';
+    document.querySelector('.mainpage').style.display = 'none';
     document.querySelector('.contact').style.display = 'none';
 }
 
-export {menu, displayMenu};
+const displayContact = () => {
+    document.querySelector('.menuimage').style.display ='none';
+    document.querySelector('.mainpage').style.display = 'none';
+    document.querySelector('.contact').style.display = 'block';
+}
+
+
+
+export {menu, displayMenu, displayContact};

@@ -1,9 +1,9 @@
 import food3 from './images/food3.jpg';
-import {displayMenu} from './menu';
+import {displayMenu, displayContact} from './menu';
 
 const home = () => {
-    const bodyElem = document.createElement('div');
-    bodyElem.setAttribute('class', 'd-flex ml-auto home');
+    const bodyElem = document.querySelector('#content');
+    bodyElem.setAttribute('class', 'd-flex ml-auto mainpage');
 
     const content = document.createElement('div');
     content.setAttribute('class', 'jumbotron m-5 col-md-6');
@@ -16,10 +16,10 @@ const home = () => {
     button.innerHTML = 'Explore our Menu';
     button.addEventListener('click', displayMenu);
 
-
     const btncontact = document.createElement('button');
     btncontact.setAttribute('class', 'btn btn-primary m-5');
     btncontact.innerHTML = 'Contact Us';
+    btncontact.addEventListener('click', displayContact);
     
     bodyText.innerHTML = 'Chez Bibih offers a variety of mouth watering dishes at affordable prices';
    

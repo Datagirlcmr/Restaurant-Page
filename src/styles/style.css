@@ -9,6 +9,14 @@
     transition: width 2s, height 2s, transform 2s;
 }
 
+.home {
+    display: none;
+}
+
+.show {
+    display : block;
+}
+
 .menuimage:hover {
     width: 1000px;
     height: 600px;

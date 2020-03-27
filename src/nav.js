@@ -15,7 +15,7 @@ const logo = () => {
 
     const home = document.createElement('a');
     home.innerHTML = home.innerHTML = 'Home';
-    home.setAttribute('href', 'javascript:menuPage()');
+    home.setAttribute('href', '');
 
     const menu = document.createElement('a');
     menu.innerHTML = 'Menu';
