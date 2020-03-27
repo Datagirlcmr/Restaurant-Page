@@ -1,8 +1,9 @@
 import food3 from './images/food3.jpg';
+import {displayMenu} from './menu';
 
 const home = () => {
     const bodyElem = document.createElement('div');
-    bodyElem.setAttribute('class', 'd-flex ml-auto');
+    bodyElem.setAttribute('class', 'd-flex ml-auto home');
 
     const content = document.createElement('div');
     content.setAttribute('class', 'jumbotron m-5 col-md-6');
@@ -13,6 +14,7 @@ const home = () => {
     const button = document.createElement('button');
     button.setAttribute('class', 'btn btn-success m-5');
     button.innerHTML = 'Explore our Menu';
+    button.addEventListener('click', displayMenu);
 
 
     const btncontact = document.createElement('button');

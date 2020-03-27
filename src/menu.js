@@ -3,8 +3,15 @@ import menupic from './images/menu.jpg';
 const menu = () => {
     const menuImage = document.createElement('img');
     menuImage.src = menupic;
-    menuImage.setAttribute('class', 'menuimage col-md-6 m-5');
     document.body.appendChild(menuImage);
+    menuImage.setAttribute('class', 'menuimage col-md-6 m-5');
+    menuImage.style.display = 'none';
 }
 
-export default menu;
+const displayMenu = () => {
+    document.querySelector('.menuimage').style.display ='block';
+    document.querySelector('.home').style.display = 'none';
+    document.querySelector('.contact').style.display = 'none';
+}
+
+export {menu, displayMenu};
