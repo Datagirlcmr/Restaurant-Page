@@ -14,18 +14,18 @@ const logo = () => {
   headName.classList.add('welcome');
   headName.innerHTML = 'Welcome to Chez Bibih';
 
-  const home = document.createElement('a');
+  const home = document.createElement('button');
   home.innerHTML = 'Home';
-  home.setAttribute('href', '');
+  home.setAttribute('class', 'btn btn-warning col-md-1');
 
-  const menu = document.createElement('a');
+  const menu = document.createElement('button');
   menu.innerHTML = 'Menu';
-  menu.setAttribute('href', '');
+  menu.setAttribute('class', 'btn btn-warning col-md-1');
   menu.addEventListener('click', displayMenu);
 
-  const contact = document.createElement('a');
+  const contact = document.createElement('button');
   contact.innerHTML = 'Contact';
-  contact.setAttribute('href', '');
+  contact.setAttribute('class', 'btn btn-warning col-md-1');
   contact.addEventListener('click', displayContact);
 
   document.body.append(navBrand, nav);
