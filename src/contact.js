@@ -1,4 +1,5 @@
 
+
 const contact = () => {
    const contactUs = document.createElement('h1');
    contactUs.setAttribute('class', 'jumbotron text-danger text-center contact');

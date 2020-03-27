@@ -1,4 +1,5 @@
 import food1  from './images/food1.jpg';
+import {displayMenu, displayContact} from './menu';
 
 const logo = () => {
     const nav = document.createElement('div');
@@ -20,10 +21,12 @@ const logo = () => {
     const menu = document.createElement('a');
     menu.innerHTML = 'Menu';
     menu.setAttribute('href', '');
+    menu.addEventListener('click', displayMenu);
 
     const contact = document.createElement('a');
     contact.innerHTML = 'Contact';
     contact.setAttribute('href', '');
+    contact.addEventListener('click', displayContact);
 
     document.body.append(navBrand, nav);
     navBrand.appendChild(logoImage);

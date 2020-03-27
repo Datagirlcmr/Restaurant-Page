@@ -37,7 +37,7 @@ const home = () => {
     content.append(bodyText, button, btncontact);
     bodyImage.appendChild(foodImage);
     
-    
+    return {button, btncontact};
 }
 
 export default home;

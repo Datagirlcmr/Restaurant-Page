@@ -8,21 +8,21 @@ const menu = () => {
     menuImage.style.display = 'none';
 }
 
-const displayMenu = () => {
+const displayMenu = (e) => {
+   e.preventDefault();
    const showMenu = document.querySelector('.menuimage')
    const showPage = document.querySelector('.mainpage')
    showPage.replaceWith(showMenu);
    showMenu.style.display = 'block';
-   //const showContact =document.querySelector('.contact')
 }
 
-const displayContact = () => {
+const displayContact = (e) => {
+   e.preventDefault()
    const showContact = document.querySelector('.contact')
    const showPage = document.querySelector('.mainpage')
    showPage.replaceWith(showContact);
    showContact.style.display = 'block';
 }
-
 
 
 export {menu, displayMenu, displayContact};
