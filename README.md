@@ -7,9 +7,9 @@ The main purpose of this project is to make a restaurant page using Javascript. 
 
 =======
 
-## Live Demo
+## Live Version
 
-<img src='src/images/restaurant.png' alt='restaupage'>
+<img src='src/images/restaurant1.png' alt='restaupage'>
 
 ## Features
 
