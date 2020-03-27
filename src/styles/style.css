@@ -3,6 +3,18 @@
     height: 300px;
 }
 
+.menuimage {
+    width: 1000px;
+    height: 600px;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.menuimage:hover {
+    width: 1000px;
+    height: 600px;
+    transform: rotate(360deg);
+}
+
 .navigation {
     display: flex;
     justify-content: space-around;

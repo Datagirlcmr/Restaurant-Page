@@ -9,9 +9,12 @@ const home = () => {
 
     const bodyText = document.createElement('h3');
     bodyText.setAttribute('class', 'text-center text-danger')
+
     const button = document.createElement('button');
     button.setAttribute('class', 'btn btn-success m-5');
     button.innerHTML = 'Explore our Menu';
+
+
     const btncontact = document.createElement('button');
     btncontact.setAttribute('class', 'btn btn-primary m-5');
     btncontact.innerHTML = 'Contact Us';
@@ -23,7 +26,6 @@ const home = () => {
     bodyImage.setAttribute('class', 'col-md-4');
 
     const foodImage = document.createElement('img');
-    // foodImage.classList.add('logoimage');
     foodImage.src = food3;
     foodImage.setAttribute('class', 'col-md-12')
     

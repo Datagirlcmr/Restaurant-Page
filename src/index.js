@@ -4,10 +4,11 @@ import  'bootstrap/dist/css/bootstrap.min.css';
 import logo from './nav';
 import  home from './home';
 import footer from './footer';
+import menu from './menu';
 
 logo();
 home();
 footer();
-
+menu();
 
 

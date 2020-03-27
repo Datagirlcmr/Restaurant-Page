@@ -1,4 +1,3 @@
-//import * as url from './images/logo.jpeg';
 import food1  from './images/food1.jpg';
 
 const logo = () => {
@@ -15,13 +14,16 @@ const logo = () => {
     headName.innerHTML = 'Welcome to Chez Bibih';
 
     const home = document.createElement('a');
-    home.innerHTML = 'Home';
+    home.innerHTML = home.innerHTML = 'Home';
+    home.setAttribute('href', 'javascript:menuPage()');
 
     const menu = document.createElement('a');
     menu.innerHTML = 'Menu';
+    menu.setAttribute('href', '');
 
     const contact = document.createElement('a');
     contact.innerHTML = 'Contact';
+    contact.setAttribute('href', '');
 
     document.body.append(navBrand, nav);
     navBrand.appendChild(logoImage);
