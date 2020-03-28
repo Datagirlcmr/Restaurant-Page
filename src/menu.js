@@ -39,6 +39,6 @@ const displayContact = e => {
   showContact.classList.add('d-block');
 };
 
-export { 
+export {
   menu, displayMenu, displayContact, displayHome
- };
+};
