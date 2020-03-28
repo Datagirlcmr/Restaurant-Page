@@ -1,5 +1,5 @@
 import food1 from './images/food1.jpg';
-import { displayMenu, displayContact } from './menu';
+import { displayMenu, displayContact, displayHome } from './menu';
 
 const logo = () => {
   const nav = document.createElement('div');
@@ -17,6 +17,7 @@ const logo = () => {
   const home = document.createElement('button');
   home.innerHTML = 'Home';
   home.setAttribute('class', 'btn btn-warning col-md-1');
+  home.addEventListener('click', displayHome);
 
   const menu = document.createElement('button');
   menu.innerHTML = 'Menu';

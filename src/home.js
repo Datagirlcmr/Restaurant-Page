@@ -3,7 +3,7 @@ import { displayMenu, displayContact } from './menu';
 
 const home = () => {
   const bodyElem = document.createElement('div');
-  bodyElem.setAttribute('class', 'd-flex ml-auto');
+  bodyElem.setAttribute('class', 'd-flex ml-auto bodyelem');
 
   const content = document.createElement('div');
   content.setAttribute('class', 'jumbotron m-5 col-md-6 mainpage');
