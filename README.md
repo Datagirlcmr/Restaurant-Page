@@ -34,6 +34,6 @@ For more information, see the
 - Linkedin: [linkedin](https://www.linkedin.com/in/selma-ndi-datagirl-imba-8976ab32/)
 
 
-Contributions, issues and feature requests are welcome!
+Contributions, issues and feature requests are welcome! 
 
 Feel free to check the [issues page](https://github.com/Datagirlcmr/Restaurant-Page/issues).
