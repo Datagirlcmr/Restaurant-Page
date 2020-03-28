@@ -40,5 +40,5 @@ const displayContact = e => {
 };
 
 export {
-  menu, displayMenu, displayContact, displayHome
+  menu, displayMenu, displayContact, displayHome,
 };
