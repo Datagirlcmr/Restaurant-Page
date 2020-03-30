@@ -3,7 +3,7 @@ The main purpose of this project is to make a restaurant page using Javascript. 
 
 ## Live Demo Link
 
-[Live Demo Link](https://raw.githack.com/Datagirlcmr/Restaurant-Page/restaurant/dist/index.html)
+[Live Demo Link](https://raw.githack.com/Datagirlcmr/Restaurant-Page/development/dist/index.html)
 
 =======
 
