@@ -1,0 +1,42 @@
+.logoimage {
+    width: 1284px;
+    height: 300px;
+}
+
+.menuimage {
+    width: 1000px;
+    height: 600px;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.home {
+    display: none;
+}
+
+.show {
+    display : block;
+}
+
+.menuimage:hover {
+    width: 1000px;
+    height: 600px;
+    transform: rotate(360deg);
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: green;
+}
+
+.welcome{
+    text-transform: uppercase;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    from {color: green}
+    to {color: orangered}
+};
